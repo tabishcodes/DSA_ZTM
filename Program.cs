@@ -132,3 +132,14 @@ void display(char[] DisplayIt)
         //display(popElementsViaReverseSkip(charsArray));
     }
 }
+
+/*
+Video: 66 => Static vs Dynamic Arrays
+    In this video we have learned that
+        Static Arrays has a fixed or set size.
+            lookup & push func has time complexity of O(1).
+            insert & delete func has time complexity of O(n).
+        Dynamic Arrays are size independent & can set or fixed the array size as per data in it. 
+            lookup func is O(1) but append func can be O(1) or O(n).
+            insert & delete func has time complexity of O(n).
+*/
