@@ -1,5 +1,5 @@
 ﻿/*
-Video: 66 => Array Introduction 
+Video: 67 => Array Introduction 
     In this video we have learned about the Push & Pop Array Methods. 
 */
 using System.Collections;
@@ -134,7 +134,7 @@ void display(char[] DisplayIt)
 }
 
 /*
-Video: 66 => Static vs Dynamic Arrays
+Video: 68 => Static vs Dynamic Arrays
     In this video we have learned that
         Static Arrays has a fixed or set size.
             lookup & push func has time complexity of O(1).
@@ -143,3 +143,34 @@ Video: 66 => Static vs Dynamic Arrays
             lookup func is O(1) but append func can be O(1) or O(n).
             insert & delete func has time complexity of O(n).
 */
+
+/*
+Video: 69 => Quick Note: Upcoming Video
+*/
+
+/*
+    Video: 69 =>
+*/
+
+int[] arr = new int[1];
+int[] arr1 = new int[1];
+
+if(arr == arr1){
+    Console.WriteLine(true);
+}
+else
+{
+    Console.WriteLine();
+}
+
+public class Car{
+
+    string color = "black";
+
+    public static void Main(string[] args)
+    {
+        Car myObj = new Car();
+
+        Console.WriteLine(myObj.color);
+    }
+}

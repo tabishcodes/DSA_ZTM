@@ -1,0 +1,15 @@
+D:\CsharpProjects\DSA\Arrays\bin\Debug\net8.0\Arrays.exe
+D:\CsharpProjects\DSA\Arrays\bin\Debug\net8.0\Arrays.deps.json
+D:\CsharpProjects\DSA\Arrays\bin\Debug\net8.0\Arrays.runtimeconfig.json
+D:\CsharpProjects\DSA\Arrays\bin\Debug\net8.0\Arrays.dll
+D:\CsharpProjects\DSA\Arrays\bin\Debug\net8.0\Arrays.pdb
+D:\CsharpProjects\DSA\Arrays\obj\Debug\net8.0\Arrays.GeneratedMSBuildEditorConfig.editorconfig
+D:\CsharpProjects\DSA\Arrays\obj\Debug\net8.0\Arrays.AssemblyInfoInputs.cache
+D:\CsharpProjects\DSA\Arrays\obj\Debug\net8.0\Arrays.AssemblyInfo.cs
+D:\CsharpProjects\DSA\Arrays\obj\Debug\net8.0\Arrays.csproj.CoreCompileInputs.cache
+D:\CsharpProjects\DSA\Arrays\obj\Debug\net8.0\Arrays.sourcelink.json
+D:\CsharpProjects\DSA\Arrays\obj\Debug\net8.0\Arrays.dll
+D:\CsharpProjects\DSA\Arrays\obj\Debug\net8.0\refint\Arrays.dll
+D:\CsharpProjects\DSA\Arrays\obj\Debug\net8.0\Arrays.pdb
+D:\CsharpProjects\DSA\Arrays\obj\Debug\net8.0\Arrays.genruntimeconfig.cache
+D:\CsharpProjects\DSA\Arrays\obj\Debug\net8.0\ref\Arrays.dll
