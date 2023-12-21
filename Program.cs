@@ -4,7 +4,7 @@ Video: 67 => Array Introduction
 */
 using System.Collections;
 
-char[] charsArray = { 'a', 'b', 'c', 'd' };
+//char[] charsArray = { 'a', 'b', 'c', 'd' };
 
 //Display Method
 void display(char[] DisplayIt)
@@ -149,10 +149,51 @@ Video: 69 => Quick Note: Upcoming Video
 */
 
 /*
-    Video: 69 => About
+    Video: 70 => About
                     Reference type
                     Context
                     Instantiation
 */
 
 //Reference Type
+
+//int[] integer = new int[1];
+//int[] integer1 = new int[1];
+
+void refType()
+{
+    if (integer == integer1)
+    {
+        Console.WriteLine(true);
+    }
+    else
+    {
+        Console.WriteLine(false);
+    }
+}
+
+
+//refType();
+
+//Context
+
+//Instantiation
+
+//If you want to run the below class, Comment out the above code lines or delete it
+public class Player
+{
+    string name;
+    string type;
+    public Player(string name, string type)
+    {
+        this.name = name;
+        this.type = type;
+    }
+
+    public static void Main(string[] args)
+    {
+        Player player = new Player("tabish", "healer");
+
+        Console.WriteLine(player.name);
+    }
+}
