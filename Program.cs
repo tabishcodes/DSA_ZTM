@@ -1,7 +1,7 @@
 ﻿/*
 Video: 67 => Array Introduction 
     In this video we have learned about the Push & Pop Array Methods. 
-*/
+
 using System.Collections;
 
 //char[] charsArray = { 'a', 'b', 'c', 'd' };
@@ -78,7 +78,7 @@ void display(char[] DisplayIt)
 
 }
 
-/*================================================================================================*/
+//================================================================================================
 
 //POP ELEMENTS METHODS
 {
@@ -144,9 +144,7 @@ Video: 68 => Static vs Dynamic Arrays
             insert & delete func has time complexity of O(n).
 */
 
-/*
-Video: 69 => Quick Note: Upcoming Video
-*/
+//Video: 69 => Quick Note: Upcoming Video
 
 /*
     Video: 70 => About
@@ -156,9 +154,9 @@ Video: 69 => Quick Note: Upcoming Video
 */
 
 //Reference Type
-
-//int[] integer = new int[1];
-//int[] integer1 = new int[1];
+/*
+int[] integer = new int[1];
+int[] integer1 = new int[1];
 
 void refType()
 {
@@ -195,5 +193,18 @@ public class Player
         Player player = new Player("tabish", "healer");
 
         Console.WriteLine(player.name);
+    }
+}
+*/
+
+//Video: 70 => Implementing an array
+
+class MyArray
+{
+
+    public MyArray()
+    {
+        this.length = 0;
+        this.data = 0;
     }
 }
