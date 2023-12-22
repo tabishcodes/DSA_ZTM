@@ -207,5 +207,4 @@ class MyArray
         this.length = 0;
         this.data = 0;
     }
-    tabish
 }
