@@ -199,12 +199,191 @@ public class Player
 
 //Video: 70 => Implementing an array
 
+//Learning About Constructors
+/*
+class Dog
+{
+    //Instance Variable
+    string name, breed, color;
+    int age;
+
+    //Consructor Decleration of the class
+    public Dog(string name, string breed, string color, int age)
+    {
+        this.name = name;
+        this.breed = breed;
+        this.color = color;
+        this.age = age;
+    }
+
+    //Property 1
+    public string GetName()
+    {
+        return name;
+    }
+
+    //Property 2
+    public string GetBreed()
+    {
+        return breed;
+    }
+
+    //Property 3
+    public string GetColor()
+    {
+        return color;
+    }
+
+    //Property 4
+    public int GetAge()
+    {
+        return age;
+    }
+
+    //Method 1
+    public string ToString()
+    {
+        return($"Hi my name is {this.GetName()}.\nMy Bread is {this.breed} ");
+    }
+
+    //Main Method
+    public static void Main(string[] args)
+    {
+        //creating object
+        Dog tuffy = new Dog ("tuffy", "Labra", "Black", 4);
+        Console.WriteLine(tuffy.ToString());
+    }
+
+
+}
+*/
+
+/*
+class Geeks
+{
+    private string month;
+    private int year;
+
+    // declaring Copy constructor
+    public Geeks(Geeks s)
+    {
+        month = s.month;
+        year = s.year;
+    }
+
+    // Instance constructor
+    public Geeks(string month, int year)
+    {
+        this.month = month;
+        this.year = year;
+    }
+
+    // Get details of Geeks
+    public string Details
+    {
+        get
+        {
+            return "Month: " + month.ToString() +
+                     "\nYear: " + year.ToString();
+        }
+    }
+
+    // Main Method
+    public static void Main()
+    {
+
+        // Create a new Geeks object.
+        Geeks g1 = new Geeks("June", 2018);
+
+        // here is g1 details is copied to g2.
+        Geeks g2 = new Geeks(g1);
+
+        Console.WriteLine(g2.Details);
+    }
+}
+*/
+
 class MyArray
 {
-
+    public int length;
+    private Object[] data;
+    //creating constructors
     public MyArray()
     {
         this.length = 0;
-        this.data = 0;
+        this.data = new object[1];
+    }
+
+    public Object get(int index)
+    {
+        return data[index];
+    }
+
+    //pushing items at last index
+    public Object[] push(Object item)
+    {
+        if (this.data.Length == this.length)
+        {
+            Object[] temp = new object[this.length]; // creates a temp array
+            Array.Copy(this.data, temp, length); //copies all data to temp array
+            this.data = new object[length + 1]; //increases size of the this.data array
+            Array.Copy(temp, this.data, length);
+        }
+        this.data[this.length] = item; // insert item to last index
+        this.length++; //increasing the length by 1
+
+        return this.data; // returning the array this.data
+    }
+
+    public Object pop()
+    {
+        Object poped = data[this.length - 1];
+        this.data[this.length - 1] = null; //nulling out the last item
+        this.length--; //deceasing the length by 1
+
+        return poped; // returning the poped array
+    }
+
+    public Object delete(int index)
+    {
+        Object itemToDelete = data[index];
+        shiftItems(index);
+
+        return itemToDelete;
+    }
+
+    private void shiftItems(int index)
+    {
+        for (int i = index; i < length - 1; i++)
+        {
+            data[i] = data[i + 1];
+        }
+        data[length - 1] = null;
+        length--;
+    }
+
+    public void displayData(int arrayLength)
+    {
+        for (int i = 0; i < arrayLength; i++)
+        {
+            Console.WriteLine(get(i));
+            Console.WriteLine();
+        }
+    }
+
+    static void Main(string[] args)
+    {
+        MyArray myArray = new MyArray();
+        myArray.push("Hello ");
+        myArray.push("\"Beautiful\"");
+        myArray.displayData(myArray.length);
+        myArray.pop();
+        myArray.displayData(myArray.length);
+        myArray.push("\"Beautiful\" ");
+        myArray.displayData(myArray.length);
+        myArray.delete(0);
+        myArray.displayData(myArray.length);
+
     }
 }
+
