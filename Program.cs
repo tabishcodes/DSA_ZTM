@@ -393,14 +393,13 @@ class MyArray
 
 //Video: 72 => Just an intro of Strings and Arrays
 
-//Video: 73 => Exercise Reverse A String
+//Video: 73 => Exercise: Reverse A String
 
+//Video: 74 => Exercise Solution: Reverse A String
+
+/*
 class ReverseString
 {
-    //Class Variables
-    string str;
-
-    //creating constructors
     void reverseString(string str)
     {
         string result = string.Empty;
@@ -415,7 +414,82 @@ class ReverseString
     public static void Main(string[] args)
     {
         ReverseString reverseString = new ReverseString();
-        string str = "I am Tabish";
-        reverseString.reverseString(str);
+        string str = "h";
+
+        if (str.Length < 2 || str == string.Empty || str.Length == 0)
+        {
+            Console.WriteLine("Please Enter the Correct String");
+        }
+        else
+        {
+            reverseString.reverseString(str);
+        }
     }
 }
+*/
+
+//Video: 75 => Exercise: Merge the Sorted Array
+
+//Video: 76 => Exercise Solution:  Merge the Sorted Array
+
+class MergeSortedArrays
+{
+    public static void Main(string[] args)
+    {
+        //Stopwatch Starts Here
+        var watch = System.Diagnostics.Stopwatch.StartNew();
+        //Creating an object for the class methods to run
+        MergeSortedArrays mergeSortedArrays = new MergeSortedArrays();
+        int[] arr1 = { 1, 3, 5, 7 };
+        int n1 = arr1.Length;
+
+        int[] arr2 = { 2, 4, 6, 8, 10, 12 };
+        int n2 = arr2.Length;
+
+        int[] arr3 = new int[n1 + n2];
+
+        //Merge Method Called
+        mergeSortedArrays.mergeTheArrays(arr1, arr2, n1, n2, arr3);
+
+        //Printing the Sorted array
+        Console.Write("Array after merging\n");
+        for (int i = 0; i < n1 + n2; i++)
+        {
+            Console.Write(arr3[i] + " ");
+        }
+
+        //Watch stops here 
+        watch.Stop();
+        var elapsedMs = watch.ElapsedMilliseconds;
+        //Printing the time required to execute the program
+        Console.WriteLine($"\n{elapsedMs}ms");
+    }
+
+    void mergeTheArrays(int[] arr1, int[] arr2, int n1, int n2, int[] arr3)
+    {
+        int i = 0, j = 0, z = 0;
+
+        while (i < n1 && j < n2)
+        {   
+            if (arr1[i] < arr2[j])
+            {
+                arr3[z++] = arr1[i++];
+            }
+            else
+            {
+                arr3[z++] = arr2[j++];
+            }
+        }
+
+        while (i < n1)
+        {
+            arr3[z++] = arr1[i++];
+        }
+
+        while (j < n2)
+        {
+            arr3[z++] = arr2[j++];
+        }
+    }
+}
+
