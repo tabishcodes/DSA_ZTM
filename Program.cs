@@ -1,10 +1,9 @@
 ﻿/*
-Video: 67 => Array Introduction 
-    In this video we have learned about the Push & Pop Array Methods. 
+// Video: 67 => Array Introduction: In this video we have learned about the Push & Pop Array Methods. 
 
 using System.Collections;
 
-//char[] charsArray = { 'a', 'b', 'c', 'd' };
+char[] charsArray = { 'a', 'b', 'c', 'd' };
 
 //Display Method
 void display(char[] DisplayIt)
@@ -132,6 +131,7 @@ void display(char[] DisplayIt)
         //display(popElementsViaReverseSkip(charsArray));
     }
 }
+*/
 
 /*
 Video: 68 => Static vs Dynamic Arrays
@@ -146,14 +146,11 @@ Video: 68 => Static vs Dynamic Arrays
 
 //Video: 69 => Quick Note: Upcoming Video
 
-/*
-    Video: 70 => About
-                    Reference type
-                    Context
-                    Instantiation
-*/
+//Video: 70 => About Reference type, Context, & Instantiation
+
 
 //Reference Type
+
 /*
 int[] integer = new int[1];
 int[] integer1 = new int[1];
@@ -169,7 +166,7 @@ void refType()
         Console.WriteLine(false);
     }
 }
-
+*/
 
 //refType();
 
@@ -178,6 +175,7 @@ void refType()
 //Instantiation
 
 //If you want to run the below class, Comment out the above code lines or delete it
+/*
 public class Player
 {
     string name;
@@ -197,9 +195,10 @@ public class Player
 }
 */
 
-//Video: 70 => Implementing an array
+//Video: 71 => Implementing an array
 
 //Learning About Constructors
+
 /*
 class Dog
 {
@@ -303,10 +302,13 @@ class Geeks
 }
 */
 
+/*
 class MyArray
-{
+{   
+    //Class Variables
     public int length;
     private Object[] data;
+
     //creating constructors
     public MyArray()
     {
@@ -386,4 +388,34 @@ class MyArray
 
     }
 }
+*/
 
+
+//Video: 72 => Just an intro of Strings and Arrays
+
+//Video: 73 => Exercise Reverse A String
+
+class ReverseString
+{
+    //Class Variables
+    string str;
+
+    //creating constructors
+    void reverseString(string str)
+    {
+        string result = string.Empty;
+        for (int i = str.Length - 1; i >= 0; i--)
+        {
+            result += str[i];
+        }
+
+        Console.Write(result);
+    }
+
+    public static void Main(string[] args)
+    {
+        ReverseString reverseString = new ReverseString();
+        string str = "I am Tabish";
+        reverseString.reverseString(str);
+    }
+}
