@@ -495,8 +495,33 @@ class MergeSortedArrays
 }
 */
 
-//Video: 77 => Maximum Subarray Leetcode
+//Video: 77 => Solving Leetcode Excercise Questions
 
+//1. Two Sum
+/*
+int[] TwoSum(int[] nums, int target)
+{
+
+    for (int i = 0; i < nums.Length; i++)
+    {
+        for (int j = i + 1; j < nums.Length; j++)
+        {
+            if (nums[i] + nums[j] == target)
+            {
+                int[] sumarrnew = new int[] { i, j };
+                return sumarrnew;
+            }
+        }
+    }
+    //If the specific argument is not passed this will throw an error
+    throw new ArgumentException("No solution found");
+}
+//string result = string.Join(",", TwoSum([1,2,3,4,6], 10));
+//Console.WriteLine($"[{result}]");
+*/
+
+//53. Maximum Subarray
+/*
 int MaxSubArray(int[] nums)
 {
     int sum = 0;
@@ -517,6 +542,29 @@ int MaxSubArray(int[] nums)
     }
     return maxSum;
 }
+//Console.WriteLine(MaxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+*/
 
-Console.WriteLine(MaxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+//283. Moves Zeroes
+/*
+void MoveZeroes(int[] nums)
+{
+
+    int l = 0;
+
+    for (int r = 0; r < nums.Length; r++)
+    {
+        if (nums[r] != 0)
+        {
+            int temp = nums[r];
+            nums[r] = nums[l];
+            nums[l] = temp;
+            l++;
+        }
+    }
+    string result = string.Join(",", nums);
+    Console.WriteLine($"[{result}]");
+}
+//MoveZeroes([1,2,0,0,5,4]);
+*/
 
