@@ -1,5 +1,5 @@
 ﻿/*
-// Video: 67 => Array Introduction: In this video we have learned about the Push & Pop Array Methods. 
+//Video: 67 => Array Introduction: In this video we have learned about the Push & Pop Array Methods. 
 
 using System.Collections;
 
@@ -586,3 +586,5 @@ bool ContainsDuplicate(int[] nums)
 }
 //Console.WriteLine(ContainsDuplicate([1,2,3,4,1]));
 */
+
+//My Name is tabish
