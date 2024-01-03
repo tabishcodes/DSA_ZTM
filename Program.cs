@@ -587,4 +587,4 @@ bool ContainsDuplicate(int[] nums)
 //Console.WriteLine(ContainsDuplicate([1,2,3,4,1]));
 */
 
-//My Name is tabish
+//I'm MHtechin
